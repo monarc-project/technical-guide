@@ -14,8 +14,9 @@ imagick
 
 === Prepared virtual machine
 
-A virtual machine is available if you want to test MONARC.
-link:https://github.com/CASES-LU/Monarc_demo[are available]
+A virtual machine link:https://github.com/CASES-LU/Monarc_demo[is available] if
+you want to test MONARC.
+
 
 === Vagrant
 
