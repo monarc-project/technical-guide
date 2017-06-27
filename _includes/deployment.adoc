@@ -3,9 +3,11 @@
 The deployment of MONARC has been tested on Debian 9.0 and Ubuntu 17.04.
 
 * PHP (version 7.0 recommended);
-** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext, imagick
+** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
+imagick
 * Apache;
-* MySQL (version 5.7 recommended) or MariaDb.
+* MySQL (version 5.7 recommended) or MariaDb;
+* Postfix.
 
 
 == Deployment

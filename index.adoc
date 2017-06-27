@@ -1,8 +1,8 @@
-= MONARC documentation
+= MONARC technical guide
 "security made in Lëtzebuerg" (SMILE) g.i.e.
 :Date: 2017-06-27
 :Revision:  0.1
-:description: Documentation of MONARC
+:description: Technical guide of MONARC
 :keywords: risk-analysis, monarc
 :doctype: book
 :compat-mode!:
@@ -40,17 +40,18 @@
 .This document is currently under active development and discussion!
 ====
 This document is intended to administrators of a MONARC instance.
-If you find errors or omissions in this document, please don't hesitate to submit an issue or open a pull request with a fix.
+If you find errors or omissions in this document, please don't hesitate to
+submit an issue or open a pull request with a fix.
 ====
 
 
 
-= Presentation
+= Introduction
 
-== The method
+== MONARC
 
 .Discuss and Contribute
-TIP: Use {uri-ad-org-issues}/436[Issue 436] to drive development of this section. Your contributions make a difference. No contribution is too small.
+TIP: Test TIP...
 
 
 
@@ -62,13 +63,16 @@ MONARC is composed of two main parts:
 * a front office.
 
 
+// TODO: add a simple schema about the architecture
+
+
 .Summary of the different modules of the project
 [cols="h,a,a"]
 |===
 || Back office | Front office
 
 |
-| NOTE: To create users and instances.
+| NOTE: Creation of users and instances.
 | NOTE: A front office instance can be used without the back office.
 
 | Modules

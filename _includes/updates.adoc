@@ -1,3 +1,8 @@
 == System
 
+// only security/minor updates from the distribution (Debian stable,
+// Ubuntu LTS) ?
+
 == MONARC
+
+// describe how to update the code and the database schema
