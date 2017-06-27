@@ -34,6 +34,13 @@
 :underscore: _
 :adp: AsciiDoc Python
 :adr: Asciidoctor
+// Refs
+:uri-ng-anr: https://github.com/CASES-LU/ng-anr
+:uri-ng-client: https://github.com/CASES-LU/ng-client
+:uri-ng-backoffice: https://github.com/CASES-LU/ng-backoffice
+:uri-zm-core: https://github.com/CASES-LU/zm-core
+:uri-zm-client: https://github.com/CASES-LU/zm-client
+:uri-zm-backoffice: https://github.com/CASES-LU/zm-backoffice
 
 
 [NOTE]
@@ -76,16 +83,16 @@ MONARC is composed of two main parts:
 | NOTE: A front office instance can be used without the back office.
 
 | Modules
-| * MonarcCore (zm-core in vendor/monarc/core)
-  * MonarcBO (zm-backoffice in vendor/monarc/backoffice)
-| * MonarcCore
-  * MonarcFO (zm-client in vendor/monarc/frontoffice)
+| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
+  * MonarcBO ({uri-zm-backoffice}[zm-backoffice] in vendor/monarc/backoffice)
+| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
+  * MonarcFO ({uri-zm-client}[zm-client] in vendor/monarc/frontoffice)
 
 | Interfaces
-| * ng_anr
-  * ng_backoffice
-| * ng_anr
-  * ng_client
+| * {uri-ng-anr}[ng_anr]
+  * {uri-ng-backoffice}[ng_backoffice]
+| * {uri-ng-anr}[ng_anr]
+  * {uri-ng-client}[ng_client]
 |===
 
 It is possible to connect many front offices to one back office.
