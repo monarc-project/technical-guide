@@ -43,6 +43,7 @@
 :uri-zm-backoffice: https://github.com/CASES-LU/zm-backoffice
 
 
+
 [NOTE]
 .This document is currently under active development and discussion!
 ====
@@ -64,43 +65,7 @@ TIP: Test TIP...
 
 = Architecture
 
-MONARC is composed of two main parts:
-
-* a back office: for the management of entities and users;
-* a front office.
-
-
-// TODO: add a simple schema about the architecture
-
-
-.Summary of the different modules of the project
-[cols="h,a,a"]
-|===
-|| Back office | Front office
-
-|
-| NOTE: Creation of users and instances.
-| NOTE: A front office instance can be used without the back office.
-
-| Modules
-| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
-  * MonarcBO ({uri-zm-backoffice}[zm-backoffice] in vendor/monarc/backoffice)
-| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
-  * MonarcFO ({uri-zm-client}[zm-client] in vendor/monarc/frontoffice)
-
-| Interfaces
-| * {uri-ng-anr}[ng_anr]
-  * {uri-ng-backoffice}[ng_backoffice]
-| * {uri-ng-anr}[ng_anr]
-  * {uri-ng-client}[ng_client]
-|===
-
-It is possible to connect many front offices to one back office.
-
-
-== Back end
-
-== Front end
+include::{includedir}/architecture.adoc[]
 
 
 

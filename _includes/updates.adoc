@@ -5,4 +5,4 @@
 
 == MONARC
 
-// describe how to update the code and the database schema
+// describe here how to update the code and the database schema
