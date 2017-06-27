@@ -1,0 +1,106 @@
+= MONARC documentation
+"security made in Lëtzebuerg" (SMILE) g.i.e.
+:Date: 2017-06-27
+:Revision:  0.1
+:description: Documentation of MONARC
+:keywords: risk-analysis, monarc
+:doctype: book
+:compat-mode!:
+:page-layout!:
+:toc: left
+:toclevels: 2
+:sectanchors:
+:sectlinks:
+:sectnums:
+:linkattrs:
+:icons: font
+:source-highlighter: coderay
+:source-language: asciidoc
+:experimental:
+:stem:
+:idprefix:
+:idseparator: -
+:ast: &ast;
+:dagger: pass:normal[^&dagger;^]
+:endash: &#8211;
+:y: icon:check[role="green"]
+:n: icon:times[role="red"]
+:c: icon:file-text-o[role="blue"]
+:table-caption!:
+:example-caption!:
+:figure-caption!:
+:imagesdir: ../images
+:includedir: _includes
+:underscore: _
+:adp: AsciiDoc Python
+:adr: Asciidoctor
+
+
+[NOTE]
+.This document is currently under active development and discussion!
+====
+This document is intended to administrators of a MONARC instance.
+If you find errors or omissions in this document, please don't hesitate to submit an issue or open a pull request with a fix.
+====
+
+
+
+= Presentation
+
+== The method
+
+.Discuss and Contribute
+TIP: Use {uri-ad-org-issues}/436[Issue 436] to drive development of this section. Your contributions make a difference. No contribution is too small.
+
+
+
+= Architecture
+
+MONARC is composed of two main parts:
+
+* a back office: for the management of entities and users;
+* a front office.
+
+
+.Summary of the different modules of the project
+[cols="h,a,a"]
+|===
+|| Back office | Front office
+
+|
+| NOTE: To create users and instances.
+| NOTE: A front office instance can be used without the back office.
+
+| Modules
+| * MonarcCore (zm-core in vendor/monarc/core)
+  * MonarcBO (zm-backoffice in vendor/monarc/backoffice)
+| * MonarcCore
+  * MonarcFO (zm-client in vendor/monarc/frontoffice)
+
+| Interfaces
+| * ng_anr
+  * ng_backoffice
+| * ng_anr
+  * ng_client
+|===
+
+It is possible to connect many front offices to one back office.
+
+
+== Back end
+
+== Front end
+
+
+
+= Requirements and deployment
+
+include::{includedir}/deployment.adoc[]
+
+//link:deployment.html[Section B]
+
+
+
+= Updates
+
+include::{includedir}/updates.adoc[]

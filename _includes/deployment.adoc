@@ -1,0 +1,33 @@
+== Requirements
+
+The deployment of MONARC has been tested on Debian 9.0 and Ubuntu 17.04.
+
+* PHP (version 7.0 recommended);
+** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext, imagick
+* Apache;
+* MySQL (version 5.7 recommended) or MariaDb.
+
+
+== Deployment
+
+=== Prepared virtual machine
+
+A virtual machine is available if you want to test MONARC.
+link:https://github.com/CASES-LU/Monarc_demo[are available]
+
+=== Vagrant
+
+If you want to deploy the application with Vagrant:
+
+
+[source,bash]
+----
+$ sudo apt-get install virtualbox vagrant
+$ git clone https://github.com/CASES-LU/MonarcAppFO-vagrant.git
+$ cd MonarcAppFO-vagrant/
+$ vagrant up
+----
+
+Once the virtual machine will be ready go to the address: http://127.0.0.1:5001
+
+The username is _username@domain.com_ and the password is _Password123&_.
