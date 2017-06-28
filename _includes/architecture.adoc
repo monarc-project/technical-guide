@@ -3,8 +3,14 @@ MONARC is composed of two main parts:
 * a back office: for the management of entities and users;
 * a front office.
 
+ choa
+====
+TODO: Add a simple schema about the architecture used by Conostix (with the 3 servers,
+reverse proxy, etc.)
+====
 
-// TODO: add a simple schema about the architecture
+It is possible to connect many front offices to one back office.
+A front office instance can be used without the back office.
 
 
 .Summary of the different modules of the project
@@ -14,7 +20,7 @@ MONARC is composed of two main parts:
 
 |
 | NOTE: Creation of users and instances.
-| NOTE: A front office instance can be used without the back office.
+| NOTE: Risk analysis.
 
 | Modules
 | * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
@@ -29,7 +35,7 @@ MONARC is composed of two main parts:
   * {uri-ng-client}[ng_client]
 |===
 
-It is possible to connect many front offices to one back office.
+
 
 MonarcCore ({uri-zm-core}[zm-core]) is the API in charge of providing an access
 to the data.
