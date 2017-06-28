@@ -15,16 +15,16 @@ A script is provided in order to ease the process.
 
 [source,bash]
 ----
-$ git clone // update the source code
-$ scripts/client-upgrade-db.sh MonarcFO <hostname> <user> <password> monarc_common  // or simply update-all.sh ?
+$ scripts/update-all.sh
 $ sudo systemctl restart apache2
 ----
 
-The values of _<hostname>_, _<user>_, _<password>_ and _<db>_ should be in
-_config/autoload/local.php_.
+This script will:
 
-
-
-* monarc_common contains models and data created by CASES;
-* monarc_cli contains all client risk analyses. Each analysis is based on CASES
-  model of monarc_common.
+* check the presence of composer;
+* retrieve the new code from the Git repositories:
+** git pull module/[MonarcCore, MonarcBO, MonarcFO];
+** git pull node_modules/[ng_backoffice, nb_client, mg_anr] or 'npm update'.
+* run the appropriate database upgrade scripts (pathCore, pathBO, pathFO);
+* install/update with npm
+* update the translations.
