@@ -5,4 +5,26 @@
 
 == MONARC
 
-// describe here how to update the code and the database schema
+NOTE: Section really in a draft state!
+
+
+Database migrations are managed with link:https://phinx.org[Phinx].
+
+A script is provided in order to ease the process.
+
+
+[source,bash]
+----
+$ git clone // update the source code
+$ scripts/client-upgrade-db.sh MonarcFO <hostname> <user> <password> monarc_common  // or simply update-all.sh ?
+$ sudo systemctl restart apache2
+----
+
+The values of _<hostname>_, _<user>_, _<password>_ and _<db>_ should be in
+_config/autoload/local.php_.
+
+
+
+* monarc_common contains models and data created by CASES;
+* monarc_cli contains all client risk analyses. Each analysis is based on CASES
+  model of monarc_common.
