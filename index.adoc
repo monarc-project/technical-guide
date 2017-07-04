@@ -44,7 +44,6 @@
 :uri-zm-backoffice: https://github.com/CASES-LU/zm-backoffice
 
 
-
 [NOTE]
 .This document is currently under active development and discussion!
 ====
@@ -54,11 +53,7 @@ submit an issue or open a pull request with a fix.
 ====
 
 
-
-
-
 == Introduction
-
 
 
 == Architecture
@@ -66,13 +61,11 @@ submit an issue or open a pull request with a fix.
 include::{includedir}/architecture.adoc[]
 
 
-
 == Requirements and deployment
 
 include::{includedir}/deployment.adoc[]
 
 //link:deployment.html[Section B]
-
 
 
 == Updates
