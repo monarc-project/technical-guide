@@ -3,7 +3,7 @@ MONARC is composed of two main parts:
 * a back office: for the management of entities and users;
 * a front office.
 
- choa
+
 ====
 TODO: Add a simple schema about the architecture used by Conostix (with the 3 servers,
 reverse proxy, etc.)
@@ -42,6 +42,6 @@ to the data.
 MonarcFO ({uri-zm-client}[zm-client]) is the interface for the front-office.
 MonarcBO ({uri-zm-client}[zm-backoffice]) is the interface for the back-office.
 
-== Back end
+=== Back end
 
-== Front end
+=== Front end

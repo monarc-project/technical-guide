@@ -1,4 +1,4 @@
-== Requirements
+=== Requirements
 
 The deployment of MONARC has been tested on Debian 9.0 and Ubuntu 17.04.
 
@@ -10,16 +10,16 @@ imagick
 * Postfix (for the password recovery).
 
 
-== Deployment
+=== Deployment
 
-=== Prepared virtual machine
+==== Prepared virtual machine
 
 A virtual machine link:https://github.com/CASES-LU/Monarc_demo[is available] if
 you want to test MONARC. Only the front office of MONARC is installed in this
 VM.
 
 
-=== Vagrant
+==== Vagrant
 
 If you want to deploy the application (front office) with Vagrant:
 
@@ -37,7 +37,7 @@ Once the virtual machine will be ready go to the address: http://127.0.0.1:5001
 The username is _username@domain.com_ and the password is _Password123&_.
 
 
-=== Manual deployment
+==== Manual deployment
 
 Follow the instructions
 link:https://github.com/CASES-LU/MonarcAppFO/tree/master/INSTALL[here].

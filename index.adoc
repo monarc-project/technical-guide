@@ -4,7 +4,7 @@
 :Revision:  0.1
 :description: Technical guide of MONARC
 :keywords: risk-analysis, monarc
-:doctype: book
+:doctype: article
 :compat-mode!:
 :page-layout!:
 :toc: left
@@ -13,6 +13,7 @@
 :sectlinks:
 :sectnums:
 :linkattrs:
+:webfonts!:
 :icons: font
 :source-highlighter: coderay
 :source-language: asciidoc
@@ -54,22 +55,19 @@ submit an issue or open a pull request with a fix.
 
 
 
-= Introduction
 
-== MONARC
 
-.Discuss and Contribute
-TIP: Test TIP...
+== Introduction
 
 
 
-= Architecture
+== Architecture
 
 include::{includedir}/architecture.adoc[]
 
 
 
-= Requirements and deployment
+== Requirements and deployment
 
 include::{includedir}/deployment.adoc[]
 
@@ -77,6 +75,6 @@ include::{includedir}/deployment.adoc[]
 
 
 
-= Updates
+== Updates
 
 include::{includedir}/updates.adoc[]
