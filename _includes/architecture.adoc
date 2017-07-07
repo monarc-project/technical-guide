@@ -43,7 +43,7 @@ It is possible to connect many front offices to one back office.
 MonarcCore ({uri-zm-core}[zm-core]) is the API in charge of providing an access
 to the data.
 MonarcFO ({uri-zm-client}[zm-client]) is the interface for the front-office.
-MonarcBO ({uri-zm-client}[zm-backoffice]) is the interface for the back-office.
+MonarcBO ({uri-zm-backoffice}[zm-backoffice]) is the interface for the back-office.
 
 === Back end
 
