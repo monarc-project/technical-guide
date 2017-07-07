@@ -31,7 +31,7 @@ It is possible to connect many front offices to one back office.
 | * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
   * MonarcFO ({uri-zm-client}[zm-client] in vendor/monarc/frontoffice)
 
-| Interfaces
+| Interfaces (in node_modules/)
 | * {uri-ng-anr}[ng_anr]
   * {uri-ng-backoffice}[ng_backoffice]
 | * {uri-ng-anr}[ng_anr]
