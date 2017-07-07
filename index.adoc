@@ -36,12 +36,12 @@
 :adp: AsciiDoc Python
 :adr: Asciidoctor
 // Refs
-:uri-ng-anr: https://github.com/CASES-LU/ng-anr
-:uri-ng-client: https://github.com/CASES-LU/ng-client
-:uri-ng-backoffice: https://github.com/CASES-LU/ng-backoffice
-:uri-zm-core: https://github.com/CASES-LU/zm-core
-:uri-zm-client: https://github.com/CASES-LU/zm-client
-:uri-zm-backoffice: https://github.com/CASES-LU/zm-backoffice
+:uri-ng-anr: https://github.com/monarc-project/ng-anr
+:uri-ng-client: https://github.com/monarc-project/ng-client
+:uri-ng-backoffice: https://github.com/monarc-project/ng-backoffice
+:uri-zm-core: https://github.com/monarc-project/zm-core
+:uri-zm-client: https://github.com/monarc-project/zm-client
+:uri-zm-backoffice: https://github.com/monarc-project/zm-backoffice
 
 
 [NOTE]
@@ -49,7 +49,10 @@
 ====
 This document is intended to administrators of a MONARC instance.
 If you find errors or omissions in this document, please don't hesitate to
-submit an issue or open a pull request with a fix.
+submit an link:https://github.com/monarc-project/technical-guide/issues[issue]
+or open a
+link:https://github.com/monarc-project/technical-guide/pulls[pull request]
+with a fix.
 ====
 
 

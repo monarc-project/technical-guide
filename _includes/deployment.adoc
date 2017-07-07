@@ -14,7 +14,7 @@ imagick
 
 ==== Prepared virtual machine
 
-A virtual machine link:https://github.com/CASES-LU/Monarc_demo[is available] if
+A virtual machine link:https://github.com/monarc-project/Monarc_demo[is available] if
 you want to test MONARC. Only the front office of MONARC is installed in this
 VM.
 
@@ -27,7 +27,7 @@ If you want to deploy the application (front office) with Vagrant:
 [source,bash]
 ----
 $ sudo apt-get install virtualbox vagrant
-$ git clone https://github.com/CASES-LU/MonarcAppFO-vagrant.git
+$ git clone https://github.com/monarc-project/MonarcAppFO-vagrant.git
 $ cd MonarcAppFO-vagrant/
 $ vagrant up
 ----
@@ -40,4 +40,4 @@ The username is _username@domain.com_ and the password is _Password123&_.
 ==== Manual deployment
 
 Follow the instructions
-link:https://github.com/CASES-LU/MonarcAppFO/tree/master/INSTALL[here].
+link:https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL[here].

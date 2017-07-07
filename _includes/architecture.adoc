@@ -1,16 +1,19 @@
-MONARC is composed of two main parts:
+Basically MONARC is composed of two main parts:
 
-* a back office: for the management of entities and users;
-* a front office.
+* a back office: for the management of entities, users and the front office
+  instances;
+* a front office: for the management of your risks analysis.
 
 
 ====
-TODO: Add a simple schema about the architecture used by Conostix (with the 3 servers,
+TODO: Add a simple schema about the complete architecture (with the 3 servers,
 reverse proxy, etc.)
 ====
 
-It is possible to connect many front offices to one back office.
 A front office instance can be used without the back office.
+
+It is possible to connect many front offices to one back office.
+
 
 
 .Summary of the different modules of the project
