@@ -8,12 +8,12 @@ Ubuntu 17.04.
 imagick
 * Apache 2;
 * MariaDb;
-* Postfix (for the password recovery).
+* Postfix (SMTP is used for the password recovery).
 
 
 === Deployment
 
-==== The front office
+==== Only the front office
 
 Different methods are provided.
 
