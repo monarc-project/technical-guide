@@ -30,7 +30,7 @@
 :table-caption!:
 :example-caption!:
 :figure-caption!:
-:imagesdir: ../images
+:imagesdir: images
 :includedir: _includes
 :underscore: _
 :adp: AsciiDoc Python
@@ -62,6 +62,11 @@ with a fix.
 == Architecture
 
 include::{includedir}/architecture.adoc[]
+
+
+== Modules of the project
+
+include::{includedir}/modules.adoc[]
 
 
 == Requirements and deployment

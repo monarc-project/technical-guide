@@ -1,50 +1,14 @@
 Basically MONARC is composed of two main parts:
 
-* a back office: for the management of entities, users and the front office
-  instances;
-* a front office: for the management of your risks analysis.
+* a back office: for the management of entities;
+* a front office: for the management of the risks analysis. A front office
+  instance can be used without the back office.
 
+The whole architecture includes an additional reverse proxy and a configuration
+server. It is possible to connect many front offices to one back office.
 
-====
-TODO: Add a simple schema about the complete architecture (with the 3 servers,
-reverse proxy, etc.)
-====
+image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="50%"]
 
-A front office instance can be used without the back office.
-
-It is possible to connect many front offices to one back office.
-
-
-
-.Summary of the different modules of the project
-[cols="h,a,a"]
-|===
-|| Back office | Front office
-
-|
-| NOTE: Creation of users and instances.
-| NOTE: Risk analysis.
-
-| Modules
-| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
-  * MonarcBO ({uri-zm-backoffice}[zm-backoffice] in vendor/monarc/backoffice)
-| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
-  * MonarcFO ({uri-zm-client}[zm-client] in vendor/monarc/frontoffice)
-
-| Interfaces (in node_modules/)
-| * {uri-ng-anr}[ng_anr]
-  * {uri-ng-backoffice}[ng_backoffice]
-| * {uri-ng-anr}[ng_anr]
-  * {uri-ng-client}[ng_client]
-|===
-
-
-
-MonarcCore ({uri-zm-core}[zm-core]) is the API in charge of providing an access
-to the data.
-MonarcFO ({uri-zm-client}[zm-client]) is the interface for the front-office.
-MonarcBO ({uri-zm-backoffice}[zm-backoffice]) is the interface for the back-office.
-
-=== Back end
-
-=== Front end
+The whole architecture can be deployed with
+link:https://www.ansible.com[ansible]. More information
+link:https://github.com/monarc-project/ansible-ubuntu[here].

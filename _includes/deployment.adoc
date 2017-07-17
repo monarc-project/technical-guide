@@ -1,27 +1,32 @@
 === Requirements
 
-The deployment of MONARC has been tested on Debian 9.0 and Ubuntu 17.04.
+The deployment of MONARC has been tested on Debian 9.0, Ubuntu 16.04 LTS and
+Ubuntu 17.04.
 
 * PHP (version 7.0 recommended);
 ** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
 imagick
 * Apache 2;
-* MySQL (version 5.7 recommended) or MariaDb;
+* MariaDb;
 * Postfix (for the password recovery).
 
 
 === Deployment
 
-==== Prepared virtual machine
+==== The front office
+
+Different methods are provided.
+
+===== Prepared virtual machine
 
 A virtual machine link:https://github.com/monarc-project/Monarc_demo[is available] if
 you want to test MONARC. Only the front office of MONARC is installed in this
 VM.
 
 
-==== Vagrant
+===== Vagrant
 
-If you want to deploy the application (front office) with Vagrant:
+If you want to deploy the application with Vagrant:
 
 
 [source,bash]
@@ -37,7 +42,14 @@ Once the virtual machine will be ready go to the address: http://127.0.0.1:5001
 The username is _username@domain.com_ and the password is _Password123&_.
 
 
-==== Manual deployment
+===== Manual deployment
 
 Follow the instructions
 link:https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL[here].
+
+
+==== The back office and the front office
+
+The whole architecture can be deployed with
+link:https://www.ansible.com[ansible]. More information
+link:https://github.com/monarc-project/ansible-ubuntu[here].
