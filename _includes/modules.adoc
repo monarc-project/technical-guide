@@ -1,0 +1,33 @@
+The source code of MONARC is divided in several modules with dedicated Git
+repositories.
+
+
+.Summary of the different modules of the project
+[cols="h,a,a"]
+|===
+|| Back office | Front office
+
+|
+| NOTE: Management of client and instances.
+| NOTE: Risk analysis.
+
+| Modules
+| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
+  * MonarcBO ({uri-zm-backoffice}[zm-backoffice] in vendor/monarc/backoffice)
+| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
+  * MonarcFO ({uri-zm-client}[zm-client] in vendor/monarc/frontoffice)
+
+| Interfaces (in node_modules/)
+| * {uri-ng-anr}[ng_anr]
+  * {uri-ng-backoffice}[ng_backoffice]
+| * {uri-ng-anr}[ng_anr]
+  * {uri-ng-client}[ng_client]
+|===
+
+
+
+* MonarcCore ({uri-zm-core}[zm-core]) is the API in charge of providing an
+  access to the data. Common to the front office and the back office.
+* MonarcFO ({uri-zm-client}[zm-client]) is the interface for the front office.
+* MonarcBO ({uri-zm-backoffice}[zm-backoffice]) is the interface for the
+  back office.
