@@ -7,7 +7,7 @@ Ubuntu 17.04.
 ** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
 imagick
 * Apache 2;
-* MariaDb;
+* MariaDB;
 * Postfix (SMTP is used for the password recovery).
 
 

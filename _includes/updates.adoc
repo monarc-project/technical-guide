@@ -1,18 +1,14 @@
 === System
 
-Keep the software of your distribution up-to-date (Apache, PHP, MySQL, etc.).
+Keep the software of your distribution up-to-date (Apache, PHP, MariaDB, etc.).
 
 // only security/minor updates from the distribution (Debian stable,
 // Ubuntu LTS) ?
 
 === MONARC
 
-NOTE: Section really in a draft state!
-
-
+A script is provided in order to ease the process. It is fully automated.
 Database migrations are managed with link:https://phinx.org[Phinx].
-
-A script is provided in order to ease the process.
 
 
 [source,bash]
