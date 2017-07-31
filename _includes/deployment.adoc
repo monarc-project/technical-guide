@@ -19,15 +19,13 @@ Different methods are provided.
 
 ===== Prepared virtual machine
 
-A virtual machine link:https://github.com/monarc-project/Monarc_demo[is available] if
-you want to test MONARC. Only the front office of MONARC is installed in this
-VM.
+A link:https://github.com/monarc-project/Monarc_demo[virtual machine] for
+use with VirtualBox is available if you want to quickly test MONARC.
 
 
 ===== Vagrant
 
 If you want to deploy the application with Vagrant:
-
 
 [source,bash]
 ----
@@ -37,9 +35,12 @@ $ cd MonarcAppFO-vagrant/
 $ vagrant up
 ----
 
-Once the virtual machine will be ready go to the address: http://127.0.0.1:5001
-
+Once the virtual machine will be ready go to the address:
+http://127.0.0.1:5001 +
 The username is _username@domain.com_ and the password is _Password123&_.
+
+This method is not recommended for production. But this is the best way
+if you want to try an up-to-date version of MONARC.
 
 
 ===== Manual deployment

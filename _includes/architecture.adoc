@@ -12,3 +12,7 @@ image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="
 The whole architecture can be deployed with
 link:https://www.ansible.com[ansible]. More information
 link:https://github.com/monarc-project/ansible-ubuntu[here].
+
+If you want to simply test MONARC or run your own risk analysis you probably
+only need the front office. More information about the installation in 
+<<_includes/deployment.adoc#only-the-front-office,this section>>.

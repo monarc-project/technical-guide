@@ -1,14 +1,12 @@
 === System
 
 Keep the software of your distribution up-to-date (Apache, PHP, MariaDB, etc.).
+At least the security updates from the GNU/Linux distribution.
 
-// only security/minor updates from the distribution (Debian stable,
-// Ubuntu LTS) ?
 
 === MONARC
 
 A script is provided in order to ease the process. It is fully automated.
-Database migrations are managed with link:https://phinx.org[Phinx].
 
 
 [source,bash]
@@ -26,3 +24,5 @@ This script will:
 * run the appropriate database upgrade scripts (pathCore, pathBO, pathFO);
 * install/update JavaScript libraries with npm;
 * update the translations.
+
+Database migrations are managed with link:https://phinx.org[Phinx].
