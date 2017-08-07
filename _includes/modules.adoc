@@ -8,8 +8,8 @@ repositories.
 || Back office | Front office
 
 |
-| NOTE: Management of client and instances.
-| NOTE: Risk analysis.
+| {uri-monarc-bo}[MONARC BO]: Management of the database, clients and instances of MONARC.
+| {uri-monarc-fo}[MONARC]: The MONARC front office
 
 | Modules
 | * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)

@@ -36,6 +36,8 @@
 :adp: AsciiDoc Python
 :adr: Asciidoctor
 // Refs
+:uri-monarc-fo: https://github.com/monarc-project/MonarcAppFO
+:uri-monarc-bo: https://github.com/monarc-project/MonarcAppBO
 :uri-ng-anr: https://github.com/monarc-project/ng-anr
 :uri-ng-client: https://github.com/monarc-project/ng-client
 :uri-ng-backoffice: https://github.com/monarc-project/ng-backoffice
