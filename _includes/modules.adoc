@@ -8,7 +8,7 @@ repositories.
 || Back office | Front office
 
 |
-| {uri-monarc-bo}[MONARC BO]: Management of the database, clients and instances of MONARC.
+| {uri-monarc-bo}[MONARC BO]: Management of the database, clients and FO servers.
 | {uri-monarc-fo}[MONARC]: The MONARC front office
 
 | Modules

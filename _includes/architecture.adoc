@@ -10,9 +10,13 @@ server. It is possible to connect many front offices to one back office.
 
 image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="50%"]
 
-The whole architecture can be deployed with
+It can be deployed with
 link:https://www.ansible.com[ansible]. More information
 link:https://github.com/monarc-project/ansible-ubuntu[here].
+
+* The configuration server manages the configurations of the back office,
+  reverse proxy and different front office(s) through SSH.
+* The database _common_ of the BO should also be available to the FO servers.
 
 
 [NOTE]

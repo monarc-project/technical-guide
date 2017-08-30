@@ -19,7 +19,7 @@ Different methods are provided.
 
 ===== Prepared virtual machine
 
-A link:https://github.com/monarc-project/Monarc_demo[virtual machine] for
+A link:https://github.com/monarc-project/MonarcAppFO/releases/latest[virtual machine] for
 use with VirtualBox is available if you want to quickly test MONARC.
 
 
@@ -37,7 +37,7 @@ $ vagrant up
 
 Once the virtual machine will be ready go to the address:
 http://127.0.0.1:5001 +
-The username is _username@domain.com_ and the password is _Password123&_.
+The username is _admin@admin.test_ and the password is _admin_.
 
 This method is not recommended for production. But this is the best way
 if you want to try an up-to-date version of MONARC.
