@@ -1,6 +1,6 @@
 Basically MONARC is composed of two main parts:
 
-* a back office: for the management of the database, clients and instances of
+* a back office: for the management of the database, servers and clients of
   MONARC installation;
 * a front office: for the management of the risks analysis. A front office
   instance can be used without the back office.
