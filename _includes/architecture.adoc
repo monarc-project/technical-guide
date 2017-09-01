@@ -17,7 +17,7 @@ More information about the installation in
 The whole architecture includes an additional reverse proxy and a configuration
 server. It is possible to connect many front offices to one back office.
 
-image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="50%"]
+image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
 
 It can be deployed with
 link:https://www.ansible.com[ansible]. More information
@@ -31,26 +31,32 @@ link:https://github.com/monarc-project/ansible-ubuntu[here].
 
 === Specifications by server
 
-The specifications below are of course only advices.
+The specifications below are of course only advices. It will vary depending on
+your need.
 
 Back office:
- - 4 vCPU
- - 16GB RAM
- - 25GB HDD
- - Ubuntu Server 16.04.2 LTS 64 bits
+
+* 4 vCPU
+* 16GB RAM
+* 25GB HDD
+* Ubuntu Server 16.04.2 LTS 64 bits
 
 Front office:
- - 4vCPU
- - 16GB RAM
- - 25GB HDD
- - Ubuntu Server 16.04.2 LTS 64 bits
+
+* 4vCPU
+* 16GB RAM
+* 25GB HDD
+* Ubuntu Server 16.04.2 LTS 64 bits
 
 Reverse proxy:
- - Not that powerful, but all connections (for the BO or FO) will go through it.
-   The bandwidth must be good.
- - Ubuntu Server 16.04.2 LTS 64 bits
+
+* Not that powerful, but all connections (for the BO or FO) will go through it.
+  The bandwidth must be good.
+* Ubuntu Server 16.04.2 LTS 64 bits
 
 Configuration server:
- - Not that powerful. Mainly used for the creation of clients on the different
-   FOs,
- - Ubuntu Server 16.04.2 LTS 64 bits
+
+* Not that powerful. Mainly used for the creation of clients on the different
+  FOs.
+* Ubuntu Server 16.04.2 LTS 64 bits
+* We have tested with version 2.2.1.0 of ansible.
