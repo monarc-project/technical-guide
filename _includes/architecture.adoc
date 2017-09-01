@@ -1,3 +1,5 @@
+=== Global architecture
+
 Basically MONARC is composed of two main parts:
 
 * a back office: for the management of the database, servers and clients of
@@ -5,12 +7,12 @@ Basically MONARC is composed of two main parts:
 * a front office: for the management of the risks analysis. A front office
   instance can be used without the back office.
 
-  [NOTE]
-  ====
-  If you want run your own risk analysis you only need the front office.
-  More information about the installation in
-  <<_includes/deployment.adoc#only-the-front-office,this section>>.
-  ====
+[NOTE]
+====
+If you want run your own risk analysis you only need the front office.
+More information about the installation in
+<<_includes/deployment.adoc#only-the-front-office,this section>>.
+====
 
 The whole architecture includes an additional reverse proxy and a configuration
 server. It is possible to connect many front offices to one back office.
