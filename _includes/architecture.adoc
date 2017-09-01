@@ -5,6 +5,13 @@ Basically MONARC is composed of two main parts:
 * a front office: for the management of the risks analysis. A front office
   instance can be used without the back office.
 
+  [NOTE]
+  ====
+  If you want run your own risk analysis you only need the front office.
+  More information about the installation in
+  <<_includes/deployment.adoc#only-the-front-office,this section>>.
+  ====
+
 The whole architecture includes an additional reverse proxy and a configuration
 server. It is possible to connect many front offices to one back office.
 
@@ -15,13 +22,33 @@ link:https://www.ansible.com[ansible]. More information
 link:https://github.com/monarc-project/ansible-ubuntu[here].
 
 * The configuration server manages the configurations of the back office,
-  reverse proxy and different front office(s) through SSH.
+  reverse proxy and different front office(s) via SSH (on the same network
+  or through a VPN).
+* The reverse proxy should of course be available from Internet.
 * The database _common_ of the BO should also be available to the FO servers.
 
+=== Specifications by server
 
-[NOTE]
-====
-If you want run your own risk analysis you only need the front office.
-More information about the installation in
-<<_includes/deployment.adoc#only-the-front-office,this section>>.
-====
+The specifications below are of course only advices.
+
+Back office:
+ - 4 vCPU
+ - 16GB RAM
+ - 25GB HDD
+ - Ubuntu Server 16.04.2 LTS 64 bits
+
+Front office:
+ - 4vCPU
+ - 16GB RAM
+ - 25GB HDD
+ - Ubuntu Server 16.04.2 LTS 64 bits
+
+Reverse proxy:
+ - Not that powerful, but all connections (for the BO or FO) will go through it.
+   The bandwidth must be good.
+ - Ubuntu Server 16.04.2 LTS 64 bits
+
+Configuration server:
+ - Not that powerful. Mainly used for the creation of clients on the different
+   FOs,
+ - Ubuntu Server 16.04.2 LTS 64 bits
