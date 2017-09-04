@@ -1,15 +1,36 @@
-=== System
+Before updating MONARC it is strongly advised to configure database backup.
+For that you just need to create a file ``data/backup/credentialsmysql.cnf``:
+
+[source,ini]
+----
+[client]
+host     = localhost
+user     = sql-monarc-user
+password = your-password
+socket   = /var/run/mysqld/mysqld.sock
+[mysql_upgrade]
+host     = localhost
+user     = sql-monarc-user
+password = your-password
+socket   = /var/run/mysqld/mysqld.sock
+basedir  = /usr
+----
+
+If this file is not present, a warning message will be displayed during the
+update.
+
+=== System update
 
 Keep the software of your distribution up-to-date (Apache, PHP, MariaDB, etc.).
 At least the security updates from the GNU/Linux distribution.
 
 
-=== MONARC
+=== MONARC update
 
 The master branch should always be working and it is recommended to install
 the project using this one.
 
-If you have already installed MONARC and want to upgrade to a later version, you
+If you have already installed MONARC and want to update to a later version, you
 can use the provided script:
 
 
@@ -24,7 +45,7 @@ This script will retrieve the updates from the last stable release of MONARC.
 
 For more details the script will:
 
-* backup your databases in case the upgrade fails;
+* backup your databases in case the update fails;
 * check the presence of composer;
 * retrieve the new code from the Git repositories from the last stable release:
 ** pull updates for module/[MonarcCore, MonarcBO/MonarcFO];
