@@ -12,10 +12,10 @@ repositories.
 | {uri-monarc-fo}[MONARC]: The MONARC front office
 
 | Modules
-| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
-  * MonarcBO ({uri-zm-backoffice}[zm-backoffice] in vendor/monarc/backoffice)
-| * MonarcCore ({uri-zm-core}[zm-core] in vendor/monarc/core)
-  * MonarcFO ({uri-zm-client}[zm-client] in vendor/monarc/frontoffice)
+| * MonarcCore ({uri-zm-core}[zm-core] in ``vendor/monarc/core``)
+  * MonarcBO ({uri-zm-backoffice}[zm-backoffice] in ``vendor/monarc/backoffice``)
+| * MonarcCore ({uri-zm-core}[zm-core] in ``vendor/monarc/core``)
+  * MonarcFO ({uri-zm-client}[zm-client] in ``vendor/monarc/frontoffice``)
 
 | Interfaces (in node_modules/)
 | * {uri-ng-anr}[ng_anr]
