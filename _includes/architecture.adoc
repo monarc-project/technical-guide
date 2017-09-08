@@ -3,7 +3,7 @@
 Basically MONARC is composed of two main parts:
 
 * a back office: for the management of the database, servers and clients of
-  MONARC installation;
+  MONARC installations;
 * a front office: for the management of the risks analysis. A front office
   instance can be used without the back office.
 
@@ -23,11 +23,29 @@ It can be deployed with
 link:https://www.ansible.com[ansible]. More information
 link:https://github.com/monarc-project/ansible-ubuntu[here].
 
-* The configuration server manages the configurations of the back office,
-  reverse proxy and different front office(s) via SSH (on the same network
-  or through a VPN).
-* The reverse proxy should of course be available from Internet.
-* The database _common_ of the BO should also be available to the FO servers.
+
+* 172.18.14.73 - monarc2-rpx.test.your.domain.com
+* 172.18.13.71 - monarc2-conf.test.your.domain.com
+* 172.18.13.72 - monarc2-master.test.your.domain.com
+* 172.18.13.73 - monarc2-fo01.test.your.domain.com
+* 172.18.13.74 - monarc2-fo02.test.your.domain.com
+
+
+
+==== Network requirements
+
+The configuration server (CFG) manages the configurations of the back office,
+reverse proxy and different front office(s) via SSH.
+
+The reverse proxy (RPX) should of course be available from Internet.
+
+The database _common_ of the BO should also be available to the FO servers.
+
+link:http://www.postfix.org[Postfix] should be installed on the BO and on the
+FO. Indeed, SMTP is used for the account creation and the password recovery.
+The easiest configuration is to set up Postfix for relaying emails through your
+mail server.
+
 
 === Specifications by server
 

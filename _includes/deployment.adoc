@@ -8,7 +8,7 @@ Ubuntu 17.04.
 imagick
 * Apache 2;
 * MariaDB;
-* Postfix (SMTP is used for the password recovery).
+* Postfix (SMTP is used for the account creation and password recovery).
 
 
 === Deployment

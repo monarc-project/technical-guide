@@ -2,6 +2,7 @@ BASE_NAME=index
 OUTPUT=_build
 
 html: prepare
+	cp -R images $(OUTPUT)/html
 	asciidoctor *.adoc -D $(OUTPUT)/html
 
 pdf: prepare
