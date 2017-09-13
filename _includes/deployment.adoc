@@ -1,8 +1,34 @@
 === Requirements
 
-The deployment of MONARC has been tested on Debian 9.0, Ubuntu 16.04 LTS and
-Ubuntu 17.04.
+==== Network
 
+The deployment on the different servers requires an Internet connection since
+the updates are retrieved from our GitHub repositories. If this is hardly
+possible in your environment you need to configure a proxy in order to access
+to Internet. This is an important requirement since all MONARC updates,
+including security updates, are provided from the Git repositories.
+
+Our link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook]
+also needs an Internet connection in order to dynamically deploy new clients.
+
+
+==== TLS certificate
+
+Is is strongly advised to use a TLS certificate that will be used on the
+reverse proxy, the back office and the different front offices (see
+<<monarc-architecture-schema,the global architecture>>).
+
+The certificate *yourcert.crt* and the key file *yourcert.key* are by default
+located at ``/etc/sslkeys/`` (location configurable using the variables in the
+``inventory/hosts`` file of the ansible playbook). You can also use a single
+*.pem* file, but make sure it includes the certificate and the key.
+
+
+==== System and software
+
+The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
+
+* Git;
 * PHP (version 7.0 recommended);
 ** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
 imagick
@@ -24,25 +50,6 @@ link:https://github.com/monarc-project/MonarcAppFO/releases/latest[virtual machi
 for use with VirtualBox is available if you want to quickly test MONARC.
 
 The best way if you want to try an up-to-date version of MONARC.
-
-===== Vagrant
-
-If you want to deploy the application with Vagrant:
-
-[source,bash]
-----
-$ sudo apt-get install virtualbox vagrant
-$ git clone https://github.com/monarc-project/MonarcAppFO-vagrant.git
-$ cd MonarcAppFO-vagrant/
-$ vagrant up
-----
-
-Once the virtual machine will be ready go to the address:
-http://127.0.0.1:5001 +
-The username is _admin@admin.test_ and the password is _admin_.
-
-This method is not recommended for production.
-
 
 ===== Manual deployment
 

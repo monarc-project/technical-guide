@@ -1,9 +1,9 @@
 = MONARC technical guide
 "security made in Lëtzebuerg" (SMILE) g.i.e.
 :Date: 2017-06-27
-:Revision:  0.1
+:Revision:  0.2
 :description: Technical guide of MONARC
-:keywords: risk-analysis, monarc
+:keywords: risk-analysis, monarc, technical-guide
 :doctype: article
 :compat-mode!:
 :page-layout!:
@@ -61,14 +61,14 @@ with a fix.
 ====
 
 
-== Architecture
-
-include::{includedir}/architecture.adoc[]
-
-
 == Modules of the project
 
 include::{includedir}/modules.adoc[]
+
+
+== Architecture
+
+include::{includedir}/architecture.adoc[]
 
 
 == Requirements and deployment

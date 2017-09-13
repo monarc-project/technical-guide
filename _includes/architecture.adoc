@@ -14,15 +14,18 @@ More information about the installation in
 <<_includes/deployment.adoc#only-the-front-office,this section>>.
 ====
 
-The whole architecture includes an additional reverse proxy and a configuration
-server. It is possible to connect many front offices to one back office.
+The whole architecture includes an additional reverse proxy (**RPX**) and a
+configuration server (**CFG**). It is possible to connect many front offices
+(**FO**) to one back office (**BO**).
 
+[[monarc-architecture-schema]]
 image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
 
-It can be deployed with
+It is automatically deployed with
 link:https://www.ansible.com[ansible]. More information
-link:https://github.com/monarc-project/ansible-ubuntu[here].
+link:https://github.com/monarc-project/ansible-ubuntu[in our ansible script].
 
+Example of IPs and FQDNs:
 
 * 172.18.14.73 - monarc2-rpx.test.your.domain.com
 * 172.18.13.71 - monarc2-conf.test.your.domain.com
@@ -31,20 +34,26 @@ link:https://github.com/monarc-project/ansible-ubuntu[here].
 * 172.18.13.74 - monarc2-fo02.test.your.domain.com
 
 
-
 ==== Network requirements
 
-The configuration server (CFG) manages the configurations of the back office,
-reverse proxy and different front office(s) via SSH.
+The configuration server (**CFG**) manages the configurations of the back
+office, reverse proxy and different front office(s) via SSH.
 
-The reverse proxy (RPX) should of course be available from Internet.
+The reverse proxy (**RPX**) should of course be available from Internet. The
+**DNS** is important for the reverse proxy in order to resolve the FQDNs of the
+servers inside the network.
+
+Through the reverse proxy you should be able to contact the **BO** and the
+**FO**s from Internet. No need to able able to contact the configuration server
+from the outside.
 
 The database _common_ of the BO should also be available to the FO servers.
+
 
 link:http://www.postfix.org[Postfix] should be installed on the BO and on the
 FO. Indeed, SMTP is used for the account creation and the password recovery.
 The easiest configuration is to set up Postfix for relaying emails through your
-mail server.
+inertnal mail server (**SMTP**).
 
 
 === Specifications by server
