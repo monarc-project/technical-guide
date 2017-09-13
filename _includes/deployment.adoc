@@ -31,7 +31,7 @@ The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
 * Git;
 * PHP (version 7.0 recommended);
 ** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
-imagick
+imagick, ssl
 * Apache 2;
 * MariaDB;
 * Postfix (SMTP is used for the account creation and password recovery).
@@ -40,8 +40,6 @@ imagick
 === Deployment
 
 ==== Only the front office
-
-Different methods are provided.
 
 ===== Prepared virtual machine
 

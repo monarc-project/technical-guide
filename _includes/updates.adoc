@@ -21,8 +21,8 @@ update.
 
 === System update
 
-Keep the software of your distribution up-to-date (Apache, PHP, MariaDB, etc.).
-At least the security updates from the GNU/Linux distribution.
+Keep the software of your distribution up-to-date (Apache, PHP, MariaDB,
+Postfix, etc.). At least the security updates from the GNU/Linux distribution.
 
 
 === MONARC update

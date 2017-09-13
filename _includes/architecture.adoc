@@ -17,13 +17,12 @@ More information about the installation in
 The whole architecture includes an additional reverse proxy (**RPX**) and a
 configuration server (**CFG**). It is possible to connect many front offices
 (**FO**) to one back office (**BO**).
+It is automatically deployed with link:https://www.ansible.com[ansible].
+More information in the repository of the
+link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook].
 
 [[monarc-architecture-schema]]
 image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
-
-It is automatically deployed with
-link:https://www.ansible.com[ansible]. More information
-link:https://github.com/monarc-project/ansible-ubuntu[in our ansible script].
 
 Example of IPs and FQDNs:
 
@@ -53,37 +52,45 @@ The database _common_ of the BO should also be available to the FO servers.
 link:http://www.postfix.org[Postfix] should be installed on the BO and on the
 FO. Indeed, SMTP is used for the account creation and the password recovery.
 The easiest configuration is to set up Postfix for relaying emails through your
-inertnal mail server (**SMTP**).
+internal mail server (**SMTP**).
 
 
 === Specifications by server
 
-The specifications below are of course only advices. It will vary depending on
-your need.
+.Specifications given only as advices.
+[cols="h,a,a,a,a"]
+|===
+|| Back office | Front office | Reverse proxy | Configuration server
 
-Back office:
+| Number of vCPU
+| 4
+| 4
+|
+|
 
-* 4 vCPU
-* 16GB RAM
-* 25GB HDD
-* Ubuntu Server 16.04.2 LTS 64 bits
+| RAM (GB)
+| 16
+| 16
+|
+|
 
-Front office:
+| HDD (BG)
+| 25
+| 25
+|
+|
 
-* 4vCPU
-* 16GB RAM
-* 25GB HDD
-* Ubuntu Server 16.04.2 LTS 64 bits
+| Operating system
+| Ubuntu Server 16.04.2 LTS
+| Ubuntu Server 16.04.2 LTS
+| Ubuntu Server 16.04.2 LTS
+| Ubuntu Server 16.04.2 LTS
 
-Reverse proxy:
-
-* Not that powerful, but all connections (for the BO or FO) will go through it.
-  The bandwidth must be good.
-* Ubuntu Server 16.04.2 LTS 64 bits
-
-Configuration server:
-
-* Not that powerful. Mainly used for the creation of clients on the different
+| Comment
+|
+|
+| Not that powerful. But all connections (for the BO and FOs) will go through
+  it.
+| Not that powerful. Mainly used for the creation of clients on the different
   FOs.
-* Ubuntu Server 16.04.2 LTS 64 bits
-* We have tested with version 2.2.1.0 of ansible.
+|===
