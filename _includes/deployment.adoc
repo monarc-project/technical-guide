@@ -14,9 +14,9 @@ also needs an Internet connection in order to dynamically deploy new clients.
 
 ==== TLS certificate
 
-Is is strongly advised to use a TLS certificate that will be used on the
-reverse proxy, the back office and the different front offices (see
-<<monarc-architecture-schema,the global architecture>>).
+Is is strongly advised to use a TLS certificate on the reverse proxy. Depending
+on your configuration, you may need to secure the connection after the reverse
+proxy (see <<monarc-architecture-schema,the global architecture>>).
 
 The certificate *yourcert.crt* and the key file *yourcert.key* are by default
 located at ``/etc/sslkeys/`` (location configurable using the variables in the
@@ -32,6 +32,8 @@ The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
 * PHP (version 7.0 recommended);
 ** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
 imagick, ssl
+** PHP libraries are managed with composer;
+* JavaScript libraries are managed with npm;
 * Apache 2;
 * MariaDB;
 * Postfix (SMTP is used for the account creation and password recovery).
