@@ -24,14 +24,21 @@ link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook].
 [[monarc-architecture-schema]]
 image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
 
-Example of IPs and FQDNs:
-
+.Example of IPs and FQDNs:
+[NOTE]
+====
 * 172.18.14.73 - monarc2-rpx.test.your.domain.com
 * 172.18.13.71 - monarc2-conf.test.your.domain.com
 * 172.18.13.72 - monarc2-master.test.your.domain.com
 * 172.18.13.73 - monarc2-fo01.test.your.domain.com
 * 172.18.13.74 - monarc2-fo02.test.your.domain.com
+====
 
+It is strongly recommended to use a TLS certificate on the reverse proxy in
+order to provide a HTTPS connection between Internet and the reverse proxy.
+Depending your setup you will ideally provide a HTTPS connection after the
+reverse proxy. If you want so, make sure to have a TLS certificate for each
+server (or a wildcard certificate).
 
 ==== Network requirements
 
