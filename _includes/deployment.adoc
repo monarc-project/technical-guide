@@ -4,12 +4,24 @@
 
 The deployment on the different servers requires an Internet connection since
 the updates are retrieved from our GitHub repositories. If this is hardly
-possible in your environment you need to configure a proxy in order to access
-to Internet. This is an important requirement since all MONARC updates,
-including security updates, are provided from the Git repositories.
+possible in your environment due to an internal policy, you need to configure a
+proxy in order to access to Internet. This is an important requirement since all
+MONARC updates, including security updates, are provided from the Git repositories.
 
 Our link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook]
 also needs an Internet connection in order to dynamically deploy new clients.
+
+The servers (or the proxy) should be able to contact:
+
+* github.com
+* api.github.com
+* pypi.python.org
+* registry.npmjs.org
+* deb.nodesource.com
+* getcomposer.org
+* .packagist.org
+* packagist.phpcomposer.com
+* letsencrypt.org
 
 
 ==== TLS certificate
