@@ -27,11 +27,18 @@ image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="
 .Example of IPs and FQDNs:
 [NOTE]
 ====
-* 172.18.14.73 - monarc2-rpx.test.your.domain.com
+* 172.18.14.73 - monarc2-rpx.test.your.domain.com - my.monarc.lu
 * 172.18.13.71 - monarc2-conf.test.your.domain.com
 * 172.18.13.72 - monarc2-master.test.your.domain.com
 * 172.18.13.73 - monarc2-fo01.test.your.domain.com
 * 172.18.13.74 - monarc2-fo02.test.your.domain.com
+
+The **FO** server _monarc2-fo01_ hosts two distinct databases for two clients. An
+Apache Virtual Host is configured for each clients.
+
+A user who wants to do a security analysis with MONARC
+will for example access to his MONARC account via the address
+https://my.monarc.lu/client1 (assuming my.monarc.lu is the FQDN of the **RPX**).
 ====
 
 It is strongly recommended to use a TLS certificate on the reverse proxy in
