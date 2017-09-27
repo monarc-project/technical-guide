@@ -28,7 +28,7 @@ The servers (or the proxy) should be able to contact:
 
 Is is strongly advised to use a TLS certificate on the reverse proxy. Depending
 on your configuration, you may need to secure the connection after the reverse
-proxy (see <<monarc-architecture-schema,the global architecture>>).
+proxy (see <<TLS-certificate,this section>>).
 
 The certificate *yourcert.crt* and the key file *yourcert.key* are by default
 located at ``/etc/sslkeys/`` (location configurable using the variables in the
