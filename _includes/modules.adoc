@@ -1,7 +1,6 @@
 The source code of MONARC is divided in several modules with dedicated Git
 repositories.
 
-
 .Summary of the different modules of the project
 [cols="h,a,a"]
 |===
@@ -23,8 +22,6 @@ repositories.
 | * {uri-ng-anr}[ng_anr]
   * {uri-ng-client}[ng_client]
 |===
-
-
 
 * MonarcCore ({uri-zm-core}[zm-core]) is the API in charge of providing an
   access to the data. Common to the front office and the back office.

@@ -6,9 +6,10 @@ The deployment on the different servers requires an Internet connection since
 the updates are retrieved from our GitHub repositories. If this is hardly
 possible in your environment due to an internal policy, you need to configure a
 proxy in order to access to Internet. This is an important requirement since all
-MONARC updates, including security updates, are provided from the Git repositories.
+MONARC updates, including security updates, are provided from the Git
+repositories.
 
-Our link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook]
+The link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook]
 also needs an Internet connection in order to dynamically deploy new clients.
 
 The servers (or the proxy) should be able to contact:
@@ -24,11 +25,20 @@ The servers (or the proxy) should be able to contact:
 * letsencrypt.org
 
 
+To make the different servers use the proxy, specify the address of your proxy
+in the file ``/home/ansible/.bash_profile``. For example:
+
+[source,bash]
+----
+export http_proxy=http://proxy.your.domain.com:4128
+export https_proxy=http://proxy.your.domain.com:4128
+----
+
 ==== TLS certificate
 
 Is is strongly advised to use a TLS certificate on the reverse proxy. Depending
 on your configuration, you may need to secure the connection after the reverse
-proxy (see <<TLS-certificate,this section>>).
+proxy. See <<TLS-certificate,this section>>.
 
 The certificate *yourcert.crt* and the key file *yourcert.key* are by default
 located at ``/etc/sslkeys/`` (location configurable using the variables in the
@@ -72,5 +82,8 @@ link:https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL[here].
 ==== The back office and the front office
 
 The whole architecture can be deployed with
-link:https://www.ansible.com[ansible]. More information
-link:https://github.com/monarc-project/ansible-ubuntu[here].
+link:https://www.ansible.com[ansible].
+
+You will find more information
+link:https://github.com/monarc-project/ansible-ubuntu[here] for a deployment
+with ansible.

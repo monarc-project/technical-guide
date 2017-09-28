@@ -35,18 +35,17 @@ image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="
 ====
 
 In this example, the **FO** server _monarc-fo01_ hosts two distinct databases
-for two clients. An Apache Virtual Host is configured for each clients. +
-Note that the _common_ database of the **BO** is listening on ``0.0.0.0:3306``.
+for two clients. An Apache Virtual Host is also configured for each clients. A
+user who wants to do a security analysis with MONARC will access to his MONARC
+account via the address https://my.monarc.lu/formation/
 
-For example, a user who wants to do a security analysis with MONARC
-will access to his MONARC account via the address
-https://my.monarc.lu/formation/
+Note that the _common_ database of the **BO** is listening on ``0.0.0.0:3306``.
 
 
 [[TLS-certificate]]
 It is strongly recommended to use a TLS certificate on the reverse proxy in
 order to provide a HTTPS connection between Internet and the reverse proxy. In
-our example a TLS certificate for my.monarc.lu is used. +
+our example, a TLS certificate for my.monarc.lu is used. +
 Depending your setup you will ideally provide a HTTPS connection between the
 reverse proxy and the BO/FOs servers. If you want so, make sure to have:
 

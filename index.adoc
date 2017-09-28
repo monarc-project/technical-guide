@@ -1,14 +1,14 @@
 = MONARC technical guide
 "security made in Lëtzebuerg" (SMILE) g.i.e
-:Date: 2017-09-13
-:Revision:  0.2
+:Date: 2017-10-28
+:Revision:  0.4
 :description: Technical guide of MONARC
 :keywords: risk-analysis, monarc, technical-guide
 :doctype: article
 :compat-mode!:
 :page-layout!:
 :toc: left
-:toclevels: 2
+:toclevels: 3
 :sectanchors:
 :sectlinks:
 :sectnums:

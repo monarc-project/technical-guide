@@ -40,16 +40,16 @@ $ scripts/update-all.sh
 $ sudo systemctl restart apache2
 ----
 
-This script will retrieve the updates from the last stable release of MONARC.
-
-
+Updates from the last stable release of MONARC will be retrieved.
 For more details the script will:
 
-* backup your databases in case the update fails;
+* backup your databases in case the update fails (if enabled, as explained
+  previously);
 * check the presence of composer;
-* retrieve the new code from the Git repositories from the last stable release:
-** pull updates for module/[MonarcCore, MonarcBO/MonarcFO];
-** pull updates for node_modules/[ng_anr, ng_backoffice/ng_client].
+* retrieve the new code from the Git repositories from the last stable release
+  (master branch):
+** pull updates for module/[MonarcCore, MonarcBO/MonarcFO] via Git or composer;
+** pull updates for node_modules/[ng_anr, ng_backoffice/ng_client] via Git or
+   npm.
 * run the appropriate database upgrade scripts (pathCore, pathBO, pathFO);
-* install/update JavaScript libraries with npm;
 * update the translations.
