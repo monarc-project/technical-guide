@@ -81,9 +81,4 @@ link:https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL[here].
 
 ==== The back office and the front office
 
-The whole architecture can be deployed with
-link:https://www.ansible.com[ansible].
-
-You will find more information
-link:https://github.com/monarc-project/ansible-ubuntu[here] for a deployment
-with ansible.
+include::ansible-deployment.adoc[]
