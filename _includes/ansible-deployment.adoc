@@ -4,30 +4,30 @@ link:https://www.ansible.com[ansible].
 image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
 
 
-===== Requirements
+==== Requirements
 
 * Git on all servers;
 * Python 2 on all servers. Actually ansible 2.2 features only a tech preview of
   Python 3 support;
 * dnspython on the configuration server;
-* [ansible](https://www.ansible.com/) must be installed on the configuration
+* ansible must be installed on the configuration
   server;
 * postfix on the BO and all FO servers.
 
 
-===== Usage
+==== Usage
 
 Install ansible on the configuration server and get the playbook for MONARC:
 
 [source,bash]
 ----
-sudo apt-get install jq
+sudo apt-get install jq python-pip
 sudo -H pip install ansible dnspython
 git clone https://github.com/monarc-project/ansible-ubuntu.git
 cd ansible-ubuntu/
 ----
 
-====== Configuration
+==== Configuration
 
 * create a user named *ansible* on each server;
 * generate a SSH key for the user *ansible* on the configuration server:
@@ -108,3 +108,29 @@ these servers through SSH.
 
 You will find more information
 link:https://github.com/monarc-project/ansible-ubuntu[in the ansible playbook].
+
+
+==== Launch ansible periodically with cron
+
+[source,bash]
+----
+$ crontab -l
+# m h  dom mon dow   command
+*/30 * * * * /home/ansible/ansible-ubuntu/playbook/update.sh /home/ansible/ansible-ubuntu BO
+----
+
+This cron task should be launched on the configuration server by the *ansible*
+user.
+
+If a new client is created via the web interface of the back office, this task
+will instantiate a new MONARC instance (new database, new Apache VirtualHost
+and eventually a new server) for the newly created client.
+
+
+==== Update the ansible playbook
+
+[source,bash]
+----
+$ cd /home/ansible/ansible-ubuntu/
+$ git pull origin master
+----

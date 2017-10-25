@@ -1,0 +1,61 @@
+== Requirements
+
+=== Network
+
+The deployment on the different servers requires an Internet connection since
+the updates are retrieved from our GitHub repositories. If this is hardly
+possible in your environment due to an internal policy, you need to configure a
+proxy in order to access to Internet. This is an important requirement since all
+MONARC updates, including security updates, are provided from the Git
+repositories.
+
+The link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook]
+also needs an Internet connection in order to dynamically deploy new clients.
+
+The servers (or the proxy) should be able to contact:
+
+* github.com
+* api.github.com
+* pypi.python.org
+* registry.npmjs.org
+* deb.nodesource.com
+* getcomposer.org
+* .packagist.org
+* packagist.phpcomposer.com
+* letsencrypt.org
+
+
+To make the different servers use the proxy, specify the address of your proxy
+in the file ``/home/ansible/.bash_profile``. For example:
+
+[source,bash]
+----
+export http_proxy=http://proxy.your.domain.com:4128
+export https_proxy=http://proxy.your.domain.com:4128
+----
+
+=== TLS certificate
+
+Is is strongly advised to use a TLS certificate on the reverse proxy. Depending
+on your configuration, you may need to secure the connection after the reverse
+proxy. See <<TLS-certificate,this section>>.
+
+The certificate *yourcert.crt* and the key file *yourcert.key* are by default
+located at ``/etc/sslkeys/`` (location configurable using the variables in the
+``inventory/hosts`` file of the ansible playbook). You can also use a single
+*.pem* file, but make sure it includes the certificate and the key.
+
+
+=== System and software
+
+The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
+
+* Git;
+* PHP (version 7.0 recommended);
+** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
+imagick, ssl
+** PHP libraries are managed with composer;
+* JavaScript libraries are managed with npm;
+* Apache 2;
+* MariaDB;
+* Postfix (SMTP is used for the account creation and password recovery).

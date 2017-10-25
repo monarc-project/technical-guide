@@ -1,3 +1,5 @@
+== Updates
+
 Before updating MONARC it is strongly advised to configure database backup.
 For that you just need to create a file ``data/backup/credentialsmysql.cnf``:
 

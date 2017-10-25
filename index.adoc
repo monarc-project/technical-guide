@@ -60,24 +60,12 @@ link:https://github.com/monarc-project/technical-guide/pulls[pull request]
 with a fix.
 ====
 
-
-== Modules of the project
-
 include::{includedir}/modules.adoc[]
-
-
-== Architecture
 
 include::{includedir}/architecture.adoc[]
 
-
-== Requirements and deployment
+include::{includedir}/requirements.adoc[]
 
 include::{includedir}/deployment.adoc[]
-
-//link:deployment.html[Section B]
-
-
-== Updates
 
 include::{includedir}/updates.adoc[]

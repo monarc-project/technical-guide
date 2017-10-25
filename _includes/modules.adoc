@@ -1,3 +1,5 @@
+== Modules of the project
+
 The source code of MONARC is divided in several modules with dedicated Git
 repositories.
 
