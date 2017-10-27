@@ -38,7 +38,7 @@ can use the provided script:
 
 [source,bash]
 ----
-$ ./scripts/update-all.sh
+$ ./scripts/update-all.sh -b
 $ sudo systemctl restart apache2.service
 ----
 
