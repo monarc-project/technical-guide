@@ -6,11 +6,10 @@ repositories.
 .Summary of the different modules of the project
 [cols="h,a,a"]
 |===
-|| Back office | Front office
-
-|
-| {uri-monarc-bo}[MONARC BO]: Management of the database, clients and FO servers.
-| {uri-monarc-fo}[MONARC]: The MONARC front office
+| ^|**Back office** +
+{uri-monarc-bo}[MONARC BO]: Management of the database, clients and FO servers.
+^|**Front office** +
+{uri-monarc-fo}[MONARC FO]: The MONARC front office.
 
 | Modules
 | * MonarcCore ({uri-zm-core}[zm-core] in ``vendor/monarc/core``)

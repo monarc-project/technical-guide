@@ -24,7 +24,7 @@ More information in the repository of the
 link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook].
 
 [[monarc-architecture-schema]]
-image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
+image::monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
 
 .Example of IPs and FQDNs:
 [NOTE]
@@ -84,23 +84,23 @@ internal mail server (**SMTP**).
 .Specifications given only as advices.
 [cols="h,a,a,a,a"]
 |===
-|| Back office | Front office | Reverse proxy | Configuration server
+| ^| Back office ^|Front office ^|Reverse proxy ^|Configuration server
 
 | Number of vCPU
-| 4
-| 4
+^| 4
+^| 4
 |
 |
 
 | RAM (GB)
-| 16
-| 16
+^| 16
+^| 16
 |
 |
 
-| HDD (BG)
-| 25
-| 25
+| HDD (GB)
+^| 25
+^| 25
 |
 |
 

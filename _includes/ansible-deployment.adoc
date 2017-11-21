@@ -1,7 +1,7 @@
 The whole architecture can be deployed with
 link:https://www.ansible.com[ansible].
 
-image:monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
+image::monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
 
 
 ==== Requirements

@@ -1,5 +1,6 @@
-= MONARC technical guide
-"security made in Lëtzebuerg" (SMILE) g.i.e
+= Technical Guide
+CASES Luxembourg <info@cases.lu>
+:title-logo-image: images/header.svg
 :Date: 2017-10-28
 :Revision:  0.4
 :description: Technical guide of MONARC
@@ -49,7 +50,8 @@
 
 == Introduction
 
-[NOTE]
+=== Purpose
+[WARNING]
 .This document is currently under active development and discussion!
 ====
 This document is intended to administrators of a MONARC instance.
@@ -59,6 +61,15 @@ or open a
 link:https://github.com/monarc-project/technical-guide/pulls[pull request]
 with a fix.
 ====
+
+=== Other documents
+
+[NOTE]
+===============================================
+* link:/quick-start[*Quick Start*]: Provide a quick start with MONARC.
+* link:/user-guide[*User Guide*]: Complete documentation of the tool.
+* link:/method-guide[*Method Guide*]: Complete documentation of the method.
+===============================================
 
 include::{includedir}/modules.adoc[]
 
