@@ -81,34 +81,34 @@ internal mail server (**SMTP**).
 
 === Specifications by server
 
-.Specifications given only as advices.
+.Minimum requirements
 [cols="h,a,a,a,a"]
 |===
 | ^| Back office ^|Front office ^|Reverse proxy ^|Configuration server
 
 | Number of vCPU
-^| 4
-^| 4
+^| 2
+^| 2
 |
 |
 
 | RAM (GB)
-^| 16
-^| 16
+^| 2
+^| 4
 |
 |
 
 | HDD (GB)
-^| 25
-^| 25
+^| 20
+^| 20
 |
 |
 
 | Operating system
-| Ubuntu Server 16.04.2 LTS
-| Ubuntu Server 16.04.2 LTS
-| Ubuntu Server 16.04.2 LTS
-| Ubuntu Server 16.04.2 LTS
+| Ubuntu Server 16.04 LTS
+| Ubuntu Server 16.04 LTS
+| Ubuntu Server 16.04 LTS
+| Ubuntu Server 16.04 LTS
 
 | Comment
 |
