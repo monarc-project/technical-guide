@@ -56,8 +56,7 @@ reverse proxy and the BO/FOs servers. If you want so, make sure to have:
 - a self-signed certificate.
 
 
-
-==== Network requirements
+=== Network requirements
 
 The configuration server (**CFG**) manages the configurations of the back
 office, reverse proxy and different front office(s) via SSH.
@@ -72,49 +71,7 @@ from the outside.
 
 The database _common_ of the BO should also be available to the FO servers.
 
-
 link:http://www.postfix.org[Postfix] should be installed on the BO and on the
 FO. Indeed, SMTP is used for the account creation and the password recovery.
 The easiest configuration is to set up Postfix for relaying emails through your
 internal mail server (**SMTP**).
-
-
-=== Specifications by server
-
-.Minimum requirements
-[cols="h,a,a,a,a"]
-|===
-| ^| Back office ^|Front office ^|Reverse proxy ^|Configuration server
-
-| Number of vCPU
-^| 2
-^| 2
-|
-|
-
-| RAM (GB)
-^| 2
-^| 4
-|
-|
-
-| HDD (GB)
-^| 20
-^| 20
-|
-|
-
-| Operating system
-| Ubuntu Server 16.04 LTS
-| Ubuntu Server 16.04 LTS
-| Ubuntu Server 16.04 LTS
-| Ubuntu Server 16.04 LTS
-
-| Comment
-|
-|
-| Not that powerful. But all connections (for the BO and FOs) will go through
-  it.
-| Not that powerful. Mainly used for the creation of clients on the different
-  FOs.
-|===

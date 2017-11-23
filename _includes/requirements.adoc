@@ -1,5 +1,61 @@
 == Requirements
 
+=== System and software
+
+The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
+
+* Git;
+* PHP (version 7.0 recommended);
+** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
+imagick, ssl
+** PHP libraries are managed with composer;
+* JavaScript libraries are managed with npm;
+* Apache 2;
+* MariaDB;
+* Postfix (SMTP is used for the account creation and password recovery).
+
+
+=== Specifications by server
+
+.Minimum requirements
+[cols="h,a,a,a,a"]
+|===
+| ^| Back office ^|Front office ^|Reverse proxy ^|Configuration server
+
+| Number of vCPU
+^| 2
+^| 2
+|
+|
+
+| RAM (GB)
+^| 2
+^| 4
+|
+|
+
+| HDD (GB)
+^| 20
+^| 20
+|
+|
+
+| Operating system
+| Ubuntu Server 16.04 LTS
+| Ubuntu Server 16.04 LTS
+| Ubuntu Server 16.04 LTS
+| Ubuntu Server 16.04 LTS
+
+| Comment
+|
+|
+| Not that powerful. But all connections (for the BO and FOs) will go through
+  it.
+| Not that powerful. Mainly used for the creation of clients on the different
+  FOs.
+|===
+
+
 === Network
 
 The deployment on the different servers requires an Internet connection since
@@ -44,18 +100,3 @@ The certificate *yourcert.crt* and the key file *yourcert.key* are by default
 located at ``/etc/sslkeys/`` (location configurable using the variables in the
 ``inventory/hosts`` file of the ansible playbook). You can also use a single
 *.pem* file, but make sure it includes the certificate and the key.
-
-
-=== System and software
-
-The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
-
-* Git;
-* PHP (version 7.0 recommended);
-** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
-imagick, ssl
-** PHP libraries are managed with composer;
-* JavaScript libraries are managed with npm;
-* Apache 2;
-* MariaDB;
-* Postfix (SMTP is used for the account creation and password recovery).
