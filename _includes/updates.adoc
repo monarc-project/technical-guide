@@ -38,11 +38,14 @@ can use the provided script:
 
 [source,bash]
 ----
-$ ./scripts/update-all.sh -b
+$ ./scripts/update-all.sh
 $ sudo systemctl restart apache2.service
 ----
 
+
 Updates from the last stable release of MONARC will be retrieved.
+
+
 For more details the script will:
 
 * backup your databases in case the update fails (if enabled, as explained
@@ -55,3 +58,8 @@ For more details the script will:
    Npm.
 * run the appropriate database upgrade scripts (pathCore, pathBO, pathFO);
 * update the translations.
+
+
+Please be aware that by default the update script will run database migrations
+(for "big" and "small" upgrade). This behavior can be changed by passing the
+`-b` option to the update script.
