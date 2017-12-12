@@ -64,7 +64,7 @@ Please be aware that by default the update script will run database migrations
 `-b` option to the update script.
 
 
-==== Update MONARC when connected to a back back office
+==== Update MONARC when connected to a back office
 
 When MONARC is connected to a back office and has been deployed with the
 link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook],
