@@ -29,8 +29,7 @@ Postfix, etc.). At least the security updates from the GNU/Linux distribution.
 
 === MONARC update
 
-The master branch should always be working and it is recommended to install
-the project using this one.
+==== Update a single MONARC instance
 
 If you have already installed MONARC and want to update to a later version, you
 can use the provided script:
@@ -38,11 +37,14 @@ can use the provided script:
 
 [source,bash]
 ----
-$ ./scripts/update-all.sh -b
+$ ./scripts/update-all.sh
 $ sudo systemctl restart apache2.service
 ----
 
+
 Updates from the last stable release of MONARC will be retrieved.
+
+
 For more details the script will:
 
 * backup your databases in case the update fails (if enabled, as explained
@@ -55,3 +57,50 @@ For more details the script will:
    Npm.
 * run the appropriate database upgrade scripts (pathCore, pathBO, pathFO);
 * update the translations.
+
+
+Please be aware that by default the update script will run database migrations
+(for "big" and "small" upgrade). This behavior can be changed by passing the
+`-b` option to the update script.
+
+
+==== Update MONARC when connected to a back office
+
+When MONARC is connected to a back office and has been deployed with the
+link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook],
+three steps are required for a full proper update.
+
+1. Update of the back office
+2. Update of MONARC
+3. Update of the configuration server (ansible playbook)
+
+Always use the *ansible* user.
+
+===== Back office
+
+[source,bash]
+----
+$ su ansible
+$ cd /var/lib/monarc/bo/MonarcAppBO/
+$ ./scripts/update-all.sh
+$ sudo systemctl restart apache2.service
+----
+
+===== Front office
+
+[source,bash]
+----
+$ su ansible
+$ cd /var/lib/monarc/fo
+$ ./scripts/update-all.sh -b
+$ sudo systemctl restart apache2.service
+----
+
+===== Configuration server
+
+[source,bash]
+----
+$ su ansible
+$ cd /home/ansible/ansible-ubuntu/
+$ git pull origin master
+----
