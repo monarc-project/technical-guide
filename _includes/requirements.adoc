@@ -25,34 +25,28 @@ imagick, ssl
 | Number of vCPU
 ^| 2
 ^| 2
-|
-|
+.3+| Not that powerful.
+
+But all connections (for the BO and FOs) will go through it.
+.3+| Not that powerful.
+
+Mainly used for the creation of clients on the different FOs.
 
 | RAM (GB)
 ^| 2
 ^| 4
-|
-|
 
 | HDD (GB)
 ^| 20
 ^| 20
-|
-|
 
-| Operating system
+
+| Operating System
 | Ubuntu Server 16.04 LTS
 | Ubuntu Server 16.04 LTS
 | Ubuntu Server 16.04 LTS
 | Ubuntu Server 16.04 LTS
 
-| Comment
-|
-|
-| Not that powerful. But all connections (for the BO and FOs) will go through
-  it.
-| Not that powerful. Mainly used for the creation of clients on the different
-  FOs.
 |===
 
 
