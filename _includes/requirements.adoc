@@ -73,6 +73,7 @@ The servers (or the proxy) should be able to contact:
 * .packagist.org
 * packagist.phpcomposer.com
 * letsencrypt.org
+* APT repositories
 
 
 To make the different servers use the proxy, specify the address of your proxy
