@@ -4,8 +4,8 @@
 
 Basically MONARC is composed of two main parts:
 
-* a back office: for the management of the database, FO servers and clients of
-  MONARC installations;
+* a back office: for the management of the security models, FO servers and
+  clients of MONARC installations;
 * a front office: for the management of the risks analysis. A front office
   instance can be used without the back office.
 
@@ -19,7 +19,7 @@ More information about the installation in
 The whole architecture includes an additional reverse proxy (**RPX**) and a
 configuration server (**CFG**). It is possible to connect many front offices
 (**FO**) to one back office (**BO**).
-It is automatically deployed with link:https://www.ansible.com[ansible].
+The deployement is managed with link:https://www.ansible.com[ansible].
 More information in the repository of the
 link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook].
 
@@ -47,13 +47,7 @@ Note that the _common_ database of the **BO** is listening on ``0.0.0.0:3306``.
 [[TLS-certificate]]
 It is strongly recommended to use a TLS certificate on the reverse proxy in
 order to provide a HTTPS connection between Internet and the reverse proxy. In
-our example, a TLS certificate for my.monarc.lu is used. +
-Depending your setup you will ideally provide a HTTPS connection between the
-reverse proxy and the BO/FOs servers. If you want so, make sure to have:
-
-- a certificate for each server, or;
-- a wildcard certificate (e.g.: _*.private.your.domain.com_), or;
-- a self-signed certificate.
+our example, a TLS certificate for my.monarc.lu is used.
 
 
 === Network requirements

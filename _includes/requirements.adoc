@@ -5,7 +5,7 @@
 The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
 
 * Git;
-* PHP (version 7.0 recommended);
+* PHP (version 7.1 recommended);
 ** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
 imagick, ssl
 ** PHP libraries are managed with composer;
@@ -20,7 +20,7 @@ imagick, ssl
 .Minimum requirements
 [cols="h,a,a,a,a"]
 |===
-| ^| Back office ^|Front office ^|Reverse proxy ^|Configuration server
+| ^| Back office ^|MONARC ^|Reverse proxy ^|Configuration server
 
 | Number of vCPU
 ^| 2
@@ -87,9 +87,8 @@ export https_proxy=http://proxy.your.domain.com:4128
 
 === TLS certificate
 
-Is is strongly advised to use a TLS certificate on the reverse proxy. Depending
-on your configuration, you may need to secure the connection after the reverse
-proxy. See <<TLS-certificate,this section>>.
+Is is strongly advised to use a TLS certificate on the reverse proxy.
+See <<TLS-certificate,this section>>.
 
 The certificate *yourcert.crt* and the key file *yourcert.key* are by default
 located at ``/etc/sslkeys/`` (location configurable using the variables in the
