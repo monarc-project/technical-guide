@@ -6,13 +6,10 @@ image::monarc-architecture.png[MONARC Architecture, align="center", scaledwidth=
 
 ==== Requirements
 
-* Git on all servers;
-* Python 2 on all servers. Actually ansible 2.2 features only a tech preview of
-  Python 3 support;
-* dnspython on the configuration server;
-* ansible must be installed on the configuration
-  server;
-* postfix on the BO and all FO servers.
+* Git and Python on all servers;
+* ansible must be installed on the configuration server;
+* Postfix on the BO and all FO servers (for the password recovery feature
+  of MONARC).
 
 
 ==== Usage
@@ -21,7 +18,7 @@ Install ansible on the configuration server and get the playbook for MONARC:
 
 [source,bash]
 ----
-sudo apt-get install jq python-pip
+sudo apt-get install python-pip
 sudo -H pip install ansible dnspython
 git clone https://github.com/monarc-project/ansible-ubuntu.git
 cd ansible-ubuntu/
