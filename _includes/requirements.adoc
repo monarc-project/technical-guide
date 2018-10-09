@@ -2,14 +2,13 @@
 
 === System and software
 
-The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.
+The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.
 
 * Git;
-* PHP (version 7.1 recommended);
-** PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
-imagick, ssl
-** PHP libraries are managed with composer;
-* JavaScript libraries are managed with npm;
+* PHP (version 7.1 or 7.2):
+** PHP libraries are managed with link:https://getcomposer.org[composer];
+* Node.js:
+** JavaScript libraries are managed with link:https://www.npmjs.com[npm];
 * Apache 2;
 * MariaDB;
 * Postfix (SMTP is used for the account creation and password recovery).
@@ -42,12 +41,17 @@ Mainly used for the creation of clients on the different FOs.
 
 
 | Operating System
-| Ubuntu Server 16.04 LTS
-| Ubuntu Server 16.04 LTS
-| Ubuntu Server 16.04 LTS
-| Ubuntu Server 16.04 LTS
+| Ubuntu Server 18.04 LTS
+| Ubuntu Server 18.04 LTS
+| Ubuntu Server 18.04 LTS
+| Ubuntu Server 18.04 LTS
 
 |===
+
+Of course these values are minimum requirements. MONARC can be installed
+on a Raspberry Pi.
+It is always better to forecast more memory and disk space for MONARC
+(front office) since it will host the data of the analysis.
 
 
 === Network
