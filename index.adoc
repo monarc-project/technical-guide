@@ -2,8 +2,8 @@
 CASES Luxembourg <info@cases.lu>
 v{docdate}
 :title-logo-image: images/header.svg
-:Date: 2018-07-23
-:Revision:  0.5
+:Date: 2018-10-09
+:Revision:  0.6
 :description: Technical guide of MONARC
 :keywords: risk-analysis, monarc, technical-guide
 :doctype: article
