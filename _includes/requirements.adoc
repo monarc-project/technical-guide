@@ -3,15 +3,21 @@
 === System and software
 
 The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.
+In order to install MONARC you will need the folowing requirements:
 
 * Git;
 * PHP (version 7.1 or 7.2):
 ** PHP libraries are managed with link:https://getcomposer.org[composer];
-* Node.js:
+* JavaScript:
 ** JavaScript libraries are managed with link:https://www.npmjs.com[npm];
 * Apache 2;
-* MariaDB;
-* Postfix (SMTP is used for the account creation and password recovery).
+* MariaDB.
+
+Postfix, or an equivalent software, is required for the account creation and
+password recovery features.
+
+You will find more details
+link:https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL[here].
 
 
 === Specifications by server
@@ -91,10 +97,14 @@ export https_proxy=http://proxy.your.domain.com:4128
 
 === TLS certificate
 
-Is is strongly advised to use a TLS certificate on the reverse proxy.
-See <<TLS-certificate,this section>>.
+Is is strongly advised to use a TLS certificate.
 
-The certificate *yourcert.crt* and the key file *yourcert.key* are by default
-located at ``/etc/sslkeys/`` (location configurable using the variables in the
-``inventory/hosts`` file of the ansible playbook). You can also use a single
-*.pem* file, but make sure it includes the certificate and the key.
+In the case you are using MONARC with a back office you can set
+the certificate on the reverse proxy. The ansible playbook is
+compatible Let's Encrypt auto-renew certificates.
+You will find more information
+link:https://github.com/monarc-project/ansible-ubuntu[in the ansible playbook].
+
+If you are not using a back office you can simply configure
+the certificate on the front office server.
+
