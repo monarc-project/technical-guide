@@ -105,3 +105,6 @@ $ su ansible
 $ cd /home/ansible/ansible-ubuntu/
 $ git pull origin master
 ----
+
+If you have any problem you can check the section dedicated to the
+link:https://www.monarc.lu/documentation/common-issues[common issues].
