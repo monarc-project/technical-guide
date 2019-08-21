@@ -26,6 +26,16 @@ link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook].
 [[monarc-architecture-schema]]
 image::monarc-architecture.png[MONARC Architecture, align="center", scaledwidth="75%"]
 
+link:https://github.com/CASES-LU/MOSP[MOSP] is a platform to create, edit
+and share JSON objects.
+The goal is to gather security related JSON objects, in the first place aimed
+to be used with link:https://github.com/monarc-project/MonarcAppFO[MONARC].
+You can use any available schemas in order to create new JSON objects.
+You can have a look at link:https://objects.monarc.lu[official instance] operated
+by link:https://github.com/CASES-LU[CASES]. MONARC instances can directly query
+MOSP in order to update their knowledge base. You can have a look at the
+link:https://www.monarc.lu/documentation/MOSP-documentation/[documentation of MOSP].
+
 .Example of IPs and FQDNs:
 [NOTE]
 ====
