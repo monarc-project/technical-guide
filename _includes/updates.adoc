@@ -1,7 +1,7 @@
 == Updates
 
-Before updating MONARC it is strongly advised to configure database backup.
-For that you just need to create a file ``data/backup/credentialsmysql.cnf``:
+Before updating MONARC it is advised to configure database backup.
+For that you need to create a file ``data/backup/credentialsmysql.cnf``:
 
 [source,ini]
 ----
@@ -38,6 +38,7 @@ can use the provided script:
 [source,bash]
 ----
 $ ./scripts/update-all.sh
+$ rm -Rf ./data/cache
 $ sudo systemctl restart apache2.service
 ----
 
@@ -104,3 +105,6 @@ $ su ansible
 $ cd /home/ansible/ansible-ubuntu/
 $ git pull origin master
 ----
+
+If you have any problem you can check the section dedicated to the
+link:https://www.monarc.lu/documentation/common-issues[common issues].

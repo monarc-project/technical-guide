@@ -2,8 +2,8 @@
 CASES Luxembourg <info@cases.lu>
 v{docdate}
 :title-logo-image: images/header.svg
-:Date: 2017-10-28
-:Revision:  0.4
+:Date: 2019-05-06
+:Revision:  0.8
 :description: Technical guide of MONARC
 :keywords: risk-analysis, monarc, technical-guide
 :doctype: book
@@ -52,16 +52,14 @@ v{docdate}
 == Introduction
 
 === Purpose
-[WARNING]
-.This document is currently under active development and discussion!
-====
+
 This document is intended to administrators of a MONARC instance.
 If you find errors or omissions in this document, please don't hesitate to
 submit an link:https://github.com/monarc-project/technical-guide/issues[issue]
 or open a
 link:https://github.com/monarc-project/technical-guide/pulls[pull request]
 with a fix.
-====
+
 
 === Other documents
 
