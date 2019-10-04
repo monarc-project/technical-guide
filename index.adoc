@@ -6,7 +6,7 @@ v{docdate}
 :Revision:  0.4
 :description: Technical guide of MONARC
 :keywords: risk-analysis, monarc, technical-guide
-:doctype: article
+:doctype: book
 :compat-mode!:
 :page-layout!:
 :toc: left
