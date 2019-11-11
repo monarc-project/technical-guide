@@ -65,9 +65,9 @@ with a fix.
 
 [NOTE]
 ===============================================
-* link:/quick-start[*Quick Start*]: Provide a quick start with MONARC.
-* link:/user-guide[*User Guide*]: Complete documentation of the tool.
-* link:/method-guide[*Method Guide*]: Complete documentation of the method.
+* link:https://www.monarc.lu/documentation/quick-start[*Quick Start*]: Provide a quick start with MONARC.
+* link:https://www.monarc.lu/documentation/user-guide[*User Guide*]: Complete documentation of the tool.
+* link:https://www.monarc.lu/documentation/method-guide[*Method Guide*]: Complete documentation of the method.
 ===============================================
 
 include::{includedir}/modules.adoc[]
