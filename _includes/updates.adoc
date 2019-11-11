@@ -37,7 +37,7 @@ can use the provided script:
 
 [source,bash]
 ----
-$ ./scripts/update-all.sh
+$ ./scripts/update-all.sh -c
 $ rm -Rf ./data/cache
 $ sudo systemctl restart apache2.service
 ----
@@ -51,18 +51,15 @@ For more details the script will:
 * backup your databases in case the update fails (if enabled, as explained
   previously);
 * check the presence of composer and if needed install it;
-* retrieve the new code from the Git repositories from the last stable release
-  (master branch):
-** pull updates for module/[MonarcCore, MonarcBO/MonarcFO] via Git or composer;
-** pull updates for node_modules/[ng_anr, ng_backoffice/ng_client] via Git or
-   Npm.
-* run the appropriate database upgrade scripts (pathCore, pathBO, pathFO);
+* retrieve the new code from the last stable release (master branch):
+** pull updates for module/[MonarcCore, MonarcBO/MonarcFO] via composer;
+** pull updates for node_modules/[ng_anr, ng_backoffice/ng_client].
+* run the appropriate database upgrade scripts;
 * update the translations.
 
 
 Please be aware that by default the update script will run database migrations
-(for "big" and "small" upgrade). This behavior can be changed by passing the
-`-b` option to the update script.
+This behavior can be changed by passing the `-b` option to the update script.
 
 
 ==== Update MONARC when connected to a back office
