@@ -15,8 +15,8 @@ v{docdate}
 :sectlinks:
 :sectnums:
 :linkattrs:
-:webfonts!:
-:icons: font
+:!webfonts:
+:!icons:
 :source-highlighter: coderay
 :source-language: asciidoc
 :experimental:
@@ -70,11 +70,9 @@ with a fix.
 * link:https://www.monarc.lu/documentation/method-guide[*Method Guide*]: Complete documentation of the method.
 ===============================================
 
-include::{includedir}/modules.adoc[]
+include::{includedir}/requirements.adoc[]
 
 include::{includedir}/architecture.adoc[]
-
-include::{includedir}/requirements.adoc[]
 
 include::{includedir}/deployment.adoc[]
 
