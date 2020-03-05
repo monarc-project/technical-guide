@@ -28,8 +28,8 @@ link:https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL[here].
 | ^| Back office ^|MONARC ^|Reverse proxy ^|Configuration server
 
 | Number of vCPU
-^| 2
-^| 2
+^| 4
+^| 4
 .3+| Not that powerful.
 
 But all connections (for the BO and FOs) will go through it.
@@ -38,12 +38,12 @@ But all connections (for the BO and FOs) will go through it.
 Mainly used for the creation of clients on the different FOs.
 
 | RAM (GB)
-^| 2
 ^| 4
+^| 16
 
 | HDD (GB)
 ^| 20
-^| 20
+^| 50
 
 |===
 
