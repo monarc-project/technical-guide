@@ -1,15 +1,30 @@
-== Deployment
+== Installation / Deployment
 
-=== MONARC
+=== MONARC Front Office application
 
-If you want to install MONARC to manage your risk analysis.
+There are 2 ways of installing or deployment of the MONARC Front Office application.
 
 ==== Prepared virtual machine
 
-A
-link:https://github.com/monarc-project/MonarcAppFO/releases/latest[virtual machine]
-for use with VirtualBox is available.
-The best way if you want an up-to-date version of MONARC.
+Virtual machine can be used in case if you would like to have a locally installed instance of the MONARC Front Office
+on you PC or laptop. It is possible to use the VM installation on server, but not recommended.
+
+Here are the steps to be performed in order to launch the application:
+
+* Install Virtual Box application. Can be downloaded link:https://www.virtualbox.org/wiki/Downloads[here].
+* Download the link:https://github.com/monarc-project/MonarcAppFO/releases/latest[image] from the last release of MONARC (file with the `*.ova` extension).
+* Import the image into your VirtualBox application: Menu `File` -> `Import Appliance`, select the *.ova image and follow the steps.
+* Configure the imported image: `Setting` -> `Network` -> select `Bridged Adapter` and click OK.
+* Start the VM and login in the CLI interface. Login and password are provided on the GitHub link:https://github.com/monarc-project/MonarcAppFO/releases/latest[release page],
+section `SSH login (Ubuntu credentials)` (usually login: `monarc`, password: `password`).
+* Execute `ip address` command in the CLI and find ip v4 address. Should be something like `192.168.0.123`, where the last 3 digits are different.
+
+image:monarc_vm_ip_address.png[MONARC Architecture, align="center", scaledwidth="50%"]
+
+* Use the ip in your browser to launch the application (eg. http://192.168.0.188). Recommended to use Mozilla Firefox or Google Chrome.
+* Login to your application. the credentials are provided on the GitHub link:https://github.com/monarc-project/MonarcAppFO/releases/latest[release page],
+section `MONARC application` and usually login: `admin@admin.localhost`, password: `admin`.
+* Profit! Create and perform your risk analyzes.
 
 ==== Manual deployment
 
@@ -17,9 +32,9 @@ Follow the instructions
 link:https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL[here].
 
 
-=== MONARC and the back office
+=== MONARC Back Office application.
 
-If you want to install MONARC and the back office.
+In case if you would like to install the MONARC Back Office application.
 
 [NOTE]
 ====
