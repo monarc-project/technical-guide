@@ -6,7 +6,7 @@ The deployment of MONARC is mainly tested on Ubuntu 18.04 LTS.
 In order to install MONARC you will need the following requirements:
 
 * Git;
-* PHP (version 7.1, 7.2 or 7.3):
+* PHP (version 7.4):
 ** PHP libraries are managed with link:https://getcomposer.org[composer];
 * JavaScript:
 ** JavaScript libraries are managed with link:https://www.npmjs.com[npm];

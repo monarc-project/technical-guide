@@ -45,7 +45,7 @@ More information about the installation in
 The whole architecture includes an additional reverse proxy (**RPX**) and a
 configuration server (**CFG**). It is possible to connect many front offices
 (**FO**) to one back office (**BO**).
-The deployement is managed with link:https://www.ansible.com[ansible].
+The deployment is managed with link:https://www.ansible.com[ansible].
 More information in the repository of the
 link:https://github.com/monarc-project/ansible-ubuntu[ansible playbook].
 
@@ -61,6 +61,9 @@ You can have a look at link:https://objects.monarc.lu[official instance] operate
 by link:https://github.com/CASES-LU[CASES]. MONARC instances can directly query
 MOSP in order to update their knowledge base. You can have a look at the
 link:https://www.monarc.lu/documentation/MOSP-documentation/[documentation of MOSP].
+
+link:https://github.com/monarc-project/stats-service[Stats Service] is an API
+for the collection and processing of stats data from different MONARC instances. 
 
 .Example of IPs and FQDNs:
 [NOTE]
