@@ -12,7 +12,7 @@ on you PC or laptop. It is possible to use the VM installation on server, but no
 Here are the steps to be performed in order to launch the application:
 
 * Install Virtual Box application. Can be downloaded link:https://www.virtualbox.org/wiki/Downloads[here].
-* Download the link:https://github.com/monarc-project/MonarcAppFO/releases/latest[image] from the last release of MONARC (file with the `*.ova` extension).
+* Download the link:https://vm.monarc.lu/latest/[image] from the last release of MONARC (file with the `*.ova` extension).
 * Import the image into your VirtualBox application: Menu `File` -> `Import Appliance`, select the *.ova image and follow the steps.
 * Configure the imported image: `Setting` -> `Network` -> select `Bridged Adapter` and click OK.
 * Start the VM:
@@ -20,7 +20,7 @@ Here are the steps to be performed in order to launch the application:
 image:monarc_vm_ip_address.png[MONARC Architecture, align="center", scaledwidth="50%"]
 
 * Use the displayed IP in your browser to launch the application (here http://192.168.1.54). Recommended to use Mozilla Firefox or Google Chrome.
-* Login to your application. the credentials are provided on the GitHub link:https://github.com/monarc-project/MonarcAppFO/releases/latest[release page],
+* Login to your application. the credentials are provided on the GitHub link:https://vm.monarc.lu/latest/[release page],
 section `MONARC application` and usually login: `admin@admin.localhost`, password: `admin`.
 * Profit! Create and perform your risk analyzes.
 

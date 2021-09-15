@@ -8,7 +8,7 @@ Different installations of Stats Service can also share the statistics to the *G
 that can be used for the community and future weather forecast.
 The shared data do not have an identification of Monarc Front Office instance.
 
-An architecture of Monarc Front Offices and Back Offices instance(s) communicated with Stats Service(s) and Global Statistics can be found link:https://www.monarc.lu/documentation/stats-service/architecture.html[*here*].
+An architecture of Monarc Front Offices and Back Offices instance(s) communicated with Stats Service(s) and Global Statistics can be found link:https://www.monarc.lu/documentation/stats-service/master/architecture.html[*here*].
 
 
 === Installation of the Stats Service
@@ -20,7 +20,7 @@ it is recommended to install Stats Service on the same server where the Back Off
 The reason is that all the Front Office instances as well as Back Office need to be able to communicate with Stats Service.
 But having a separate (virtual) server for StatsService is also a good solution.
 
-The installation instructions as well as system requirements can be found link:https://www.monarc.lu/documentation/stats-service/installation.html[here].
+The installation instructions as well as system requirements can be found link:https://www.monarc.lu/documentation/stats-service/master/installation.html[here].
 Stats Service project is available on link:https://github.com/monarc-project/stats-service[GitHub].
 
 
