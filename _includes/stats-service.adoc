@@ -43,9 +43,9 @@ where {YourClientName} is a name of your Front Office instance.
 The output should contain the following lines (for example):
 [source,text]
 ----
-  ~/stats-service$ contrib/create_client.sh Cases
+  ~/stats-service$ contrib/create_client.sh NC3
   UUID: c08e380f-7ec0-43ff-bca2-4505856739e0
-  Name: Cases
+  Name: NC3
   Role: 1
   Token: ECsBPF5Lh3NreoSUTsxwDESri0UuIkpmHcHk6Zr8lXXQX_TVNAEnGv_6hGvmyBVw9XONpUCw2KIGoufRJ4jCFB
   Created at: 2021-01-01 12:51:18.776037
