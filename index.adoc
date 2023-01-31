@@ -1,8 +1,7 @@
 = Technical Guide
-CASES Luxembourg <info@cases.lu>
+NC3 Luxembourg <info@nc3.lu>
 v{docdate}
-:title-logo-image: images/header.svg
-:Date: 2019-11-15
+:Date: 2023-01-31
 :Revision:  0.9
 :description: Technical guide of MONARC
 :keywords: risk-analysis, monarc, technical-guide
